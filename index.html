@@ -396,8 +396,11 @@ section { position: relative; }
 .founder__note { font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 34px); line-height: 1.36; letter-spacing: -0.01em; }
 .founder__note p + p { margin-top: 28px; }
 .founder__note .em { font-style: var(--display-italic); color: var(--accent-dark, #9ec46a); }
+
+/* update .sig, add text-decoration:none + a hover affordance */
 .founder__sign { margin-top: 30px; display: flex; align-items: center; gap: 16px; }
-.founder__sign .sig { font-family: var(--font-display); font-style: italic; font-size: 30px; color: #f4ead9; }
+.founder__sign .sig { font-family: var(--font-display); font-style: italic; font-size: 30px; color: #f4ead9; text-decoration: none; }
+.founder__sign a.sig:hover { text-decoration: underline; }
 .founder__sign .who { font-size: 14px; color: #c9b295; font-family: var(--font-body); }
 @media (max-width: 760px){ .founder__grid { grid-template-columns: 1fr; } }
 
@@ -534,7 +537,7 @@ section { position: relative; }
   <div class="wrap">
     <div class="get__intro">
       <h2 class="reveal">Real work.<br>Real artefacts.</h2>
-      <p class="reveal">Live working sessions, deep reviews, and assets your business keeps, whatever happens with the raise. Real calls, real work, not lectures.</p>
+      <p class="reveal">Live working sessions, deep reviews, and assets your business keeps, whatever happens with the raise.</p>
     </div>
 
     <div class="pillars">
@@ -697,7 +700,7 @@ section { position: relative; }
         <p class="reveal" style="font-size:1.08em">If you're going to raise, do it once, properly.</p>
       </div>
       <div class="founder__sign reveal">
-        <span class="sig">Vinko</span>
+        <a class="sig" href="https://www.linkedin.com/in/vinkogrgic/" target="_blank" rel="noopener noreferrer">Vinko</a>
         <span class="who">Founder, Tiramisu</span>
       </div>
       <!-- mid-page CTA (after founder note) -->
