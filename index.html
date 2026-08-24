@@ -336,6 +336,7 @@ section { position: relative; }
 
 /* value stack / pricing */
 .value { margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.value__single {grid-template-columns: 1fr; max-width: 760px; margin-inline: auto;}
 .value__card { border: 1px solid var(--line); border-radius: var(--radius); padding: 34px; background: var(--surface); }
 .value__card--hero { background: var(--espresso); color: #f4ead9; border-color: var(--espresso); }
 :root[data-direction="dark"] .value__card--hero { background: var(--crema); color: var(--espresso); border-color: var(--crema); }
@@ -629,29 +630,16 @@ section { position: relative; }
       </div>
     </div>
 
-    <!-- value comparison -->
-    <div class="value">
-      <div class="value__card reveal">
-        <p class="value__label">Pieced together alternatives</p>
-        <p class="value__big" style="font-size:clamp(28px,3vw,40px)">A$50,000–80,000+</p>
-        <ul class="value__list">
-          <li><span>Pitch deck development</span><span class="price">A$2–5k / job</span></li>
-          <li><span>Investor-ready financial model</span><span class="price">A$3–8k / job</span></li>
-          <li><span>Fractional CFO / raise support</span><span class="price">A$3–12k / mth</span></li>
-          <li><span>Founder / executive coaching</span><span class="price">A$2–8k / mth</span></li>
-          <li><span>Data room / due-diligence ops</span><span class="price">A$3–6k / mth</span></li>
-        </ul>
-        <p class="value__note">Typically across 3–4 different providers for a 3–6 month raise, none of whom are accountable for the pieces fitting together, while often giving away equity.</p>
-      </div>
-      <div class="value__card value__card--hero reveal">
-        <p class="value__label">Tiramisu</p>
-        <p class="value__big">A$9,850<span class="per"> / month</span></p>
-        <p class="value__foot">One provider. Every artefact consistent with every other: the deck matches the model matches the memo. In less time, because it's bundled.</p>
-        <p class="value__note">I can deliver value in the first session and the first month. But three months is where the real value lands; that's what I aim for with you.</p>
-        <span class="nolock">Start 3mth &gt; rolling monthly · stop anytime</span>
-      </div>
-    </div>
+    <!-- pricing -->
+<div class="value value--single">
+  <div class="value__card value__card--hero reveal">
+    <p class="value__label">The engagement</p>
+    <p class="value__big">A$9,850<span class="per"> / month</span></p>
+    <p class="value__foot">Together, we shape your deck, model, memo, roadmap and operating plan to tell the same story. I hold the full picture and stay accountable for how it all fits together.</p>
+    <p class="value__note">Start with three months. If we agree that raising is not right for you, the engagement ends and billing stops. After month three, continue monthly or stop anytime.</p>
+    <span class="nolock">3-month start | then monthly | stop anytime</span>
   </div>
+</div>
   <!-- mid-page CTA (after pricing) -->
   <div style="text-align:center;margin-top:clamp(40px,6vw,64px)">
     <a class="btn btn--primary btn--lg" href="https://vinkogrgic.typeform.com/to/dna6Cl3K" target="_blank" rel="noopener noreferrer" data-cta="">Book a free 15-min consult <span class="arr">→</span></a>
